@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Documents</title>
+</head>
+<body>
+    <h2>Search Your Documents</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="query" placeholder="Ask a question..." style="width:300px;" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if query %}
+        <h3>Results for: "{{ query }}"</h3>
+        <ul>
+            {% for doc_id, text in results %}
+                <li><strong>Document {{ doc_id }}</strong>: {{ text|truncatechars:200 }}</li>
+            {% empty %}
+                <li>No results found.</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
