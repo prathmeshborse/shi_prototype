@@ -1,0 +1,38 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Environment variables file
+.env
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Database / SQLite
+db.sqlite3
+
+# Django specific
+*.pot
+*.py[cod]
+*.mo
+*.egg-info/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Twilio/secret files
+documents/whatsapp.py  # remove if you want to track this file but ensure secrets are safe
