@@ -1,0 +1,14 @@
+Django==4.2.24
+djangorestframework
+faiss-cpu
+openai
+PyPDF2
+python-docx
+pytesseract
+langdetect
+deep-translator
+sentence-transformers
+
+
+# python manage.py migrate
+
