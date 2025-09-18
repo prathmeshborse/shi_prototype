@@ -35,4 +35,4 @@ db.sqlite3
 Thumbs.db
 
 # Twilio/secret files
-documents/whatsapp.py  # remove if you want to track this file but ensure secrets are safe
+documents/whatsapp.py  

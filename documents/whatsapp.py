@@ -1,7 +1,7 @@
 #Create a Django View to Send WhatsApp Messages
 
 from twilio.rest import Client
-from django.http import JsonResponse
+from django.http import JsonRespons
 
 # Twilio credentials
 TWILIO_ACCOUNT_SID = 'ACc171356a051ca40b0dedecfa1217a749'
@@ -21,3 +21,5 @@ def send_whatsapp_message(request):
     )
 
     return JsonResponse({'status': 'sent', 'sid': message.sid})
+
+
